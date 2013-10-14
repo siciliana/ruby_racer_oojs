@@ -7,3 +7,16 @@
 th {
   text-align: left;
 }
+
+.active {
+  background-color: red;
+}
+
+img {
+  width: 80px;
+  border-radius:50%;
+}
+
+.finish {
+  visibility:hidden;
+}
