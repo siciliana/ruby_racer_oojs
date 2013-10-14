@@ -18,7 +18,8 @@ $(document).ready(function() {
         console.log(data)
         $.post('/results', data, function(response) {
           console.log(data); 
-          $('form').append(response);
+          console.log(response);
+          $('table').append(response);
         },"json");
       }
     }

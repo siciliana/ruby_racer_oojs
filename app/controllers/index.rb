@@ -29,9 +29,8 @@ post '/results' do
     p params 
     @game = Game.find_by_id(params[:game])
     p @game.winner = params[:winner]
-    p @winner_name = Player.find_by_id[:player1]
 
-
+    erb :_results
 
   else
     erb :game 
