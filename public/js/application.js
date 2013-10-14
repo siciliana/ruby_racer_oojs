@@ -30,9 +30,18 @@ $(document).ready(function() {
       tdActive2.removeClass('active');
       tdActive2.next().addClass('active');
       if (p1_finished == false && $('td:last-child').hasClass('active')) {
-        $('.finish').css("visibility", "visible");
-        $('#winner').html("Uku wins!");
-        p2_finished = true
+        // $('.finish').css("visibility", "visible");
+        // $('#winner').html("Uku wins!");
+        // p2_finished = true
+
+
+        var data = { winner : player2, game: game }
+        console.log(data)
+        $.post('/results', data, function(response) {
+          console.log(data); 
+          console.log(response);
+          $('table').append(response);
+        },"json");
       } 
     }
  

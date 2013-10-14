@@ -1,8 +1,10 @@
 .container {
   margin: 20px auto;
   width: 600px;
-  padding: 0px 20px 20px 20px;
+  padding: 50px 20px 40px 20px;
   border: 1px solid black;
+  border-radius: 20%;
+  border-color: teal;
 }
 th {
   text-align: left;
@@ -12,11 +14,15 @@ th {
   background-color: red;
 }
 
-img {
+img #player{
   width: 150px;
   border-radius:50%;
 }
 
 .finish {
   visibility:hidden;
+}
+
+.milk img {
+  width:400px;
 }
