@@ -26,3 +26,13 @@ img #player{
 .milk img {
   width:400px;
 }
+
+#henry {
+  width: 150px;
+  border-radius: 50%;
+}
+
+#uku {
+  width: 150px;
+  border-radius: 50%
+}
